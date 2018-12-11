@@ -125,7 +125,7 @@ gulp.task('sass', () => {
     .pipe($.if(isProduction, $.cssnano({ discardUnused: false, minifyFontValues: false })))
     .pipe($.size({ gzip: true, showFiles: true }))
     .pipe(gulp.dest('static/css'))
-    .pipe(browserSync.stream())
+    .pipe(browserSync.stream(true))
 })
 
 gulp.task('js-watch', ['js'], (cb) => {
