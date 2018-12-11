@@ -1,0 +1,21 @@
+.btn-primary {
+    color: #fff;
+    background-color: $primary;
+    border-color: $primary;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgba($color: $primary, $alpha: 0.7);
+    border-color: rgba($color: $primary, $alpha: 0.7);
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: $secondary;
+    border-color: $secondary;
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color: rgba($color: $secondary, $alpha: 0.7);
+    border-color: rgba($color: $secondary, $alpha: 0.7);
+}
