@@ -1,0 +1,75 @@
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  transition: 0.3s;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: rgba($color: $primary, $alpha: 1) !important;
+  border-color: rgba($color: $primary, $alpha: 1) !important;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: none;
+}
+.btn-secondary {
+  background-color: $secondary;
+  border-color: $secondary;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  transition: 0.3s;
+}
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+  background-color: rgba($color: $secondary, $alpha: 1) !important;
+  border-color: rgba($color: $secondary, $alpha: 1) !important;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: none;
+}
+
+.btn-success {
+  background-color: $lagon;
+  border-color: $lagon;
+  color: #fff;
+  font-weight: 600;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  transition: 0.3s;
+}
+
+.btn-success:hover,
+.btn-success:active,
+.btn-success:focus {
+  background-color: rgba($color: $lagon, $alpha: 1) !important;
+  border-color: rgba($color: $lagon, $alpha: 1) !important;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: none;
+}
+
+.btn-outline-success {
+  border: 1px solid $lagon;
+  font-weight: 600;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  color: $lagon;
+  transition: 0.3s;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:active,
+.btn-outline-success:focus {
+  background-color: rgba($color: $lagon, $alpha: 1) !important;
+  border-color: rgba($color: $lagon, $alpha: 1) !important;
+  color: #fff;
+  transform: scale(1.1);
+  box-shadow: none;
+}

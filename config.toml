@@ -1,4 +1,4 @@
-baseURL = "cappascap.netlify.com"
+baseURL = "/"
 languageCode = "en-gb"
 title = "Cap'Pas'Cap"
 
@@ -70,8 +70,8 @@ description =  "Cap’ Pas Cap, la plateforme qui fait matcher travail et handic
 # Sections
 [params.section_01]
 enable = true
-title = "Recruter une bonne excuse"
-description = "Embaucher un handicapé ? Certainement la meilleure chose à faire si vous voulez ruiner votre activité en quelques semaines ! Vous n’arrivez pas à licencier vos salariés vous-mêmes, vous voulez vous débarrasser de votre boîte ? Laissez un handicapé s’en occuper, c’est rapide et efficace !"
+title = "Inscrivez-vous"
+description = "Créez votre profil et renseignez le maximum d’informations : le domaine qui vous intéresse, votre âge, votre lieu de résidence, votre handicap et ses particularités, soit toute information qui nous permettra de cerner au mieux votre demande et de vous apporter une réponse adaptée."
 
 [params.section_02]
 enable = true

@@ -1,0 +1,89 @@
+.home__hero {
+  background-image: linear-gradient(
+      0deg,
+      rgba(black, 0.5),
+      rgba($primary, 0.3)
+    ),
+    url("https://res.cloudinary.com/dw06d9fmy/image/upload/q_60/v1544186772/shridhar-gupta-678685-unsplash.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.home__hero--header {
+  .container {
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: start;
+  }
+  .nav-link {
+    color: $white;
+    font-weight: 600;
+    opacity: 1 !important; 
+  }
+  .nav-link:hover {
+    opacity: 0.7;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home__hero--header {
+    .container {
+      align-items: center;
+      border-top: 1px solid rgba($color: $white, $alpha: 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+  }
+}
+.home__hero--logo {
+  margin-right: 30px;
+}
+.home__hero--content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  h1 {
+    font-family: "Playfair Display", serif;
+    color: $white;
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+  }
+  p {
+    color: $white !important;
+    font-size: 12pt;
+    opacity: 0.7;
+    text-align: center;
+  }
+}
+.home__hero--buttons {
+  text-align: center;
+  p {
+    color: $white !important;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 1em;
+    opacity: 1;
+  }
+}
+.home__footer {
+  align-items: center;
+  color: $white;
+  display: flex;
+  font-size: 10pt;
+  height: 70px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .home__hero--content {
+        h1 {
+            font-size: 2em;
+        }
+    }
+}

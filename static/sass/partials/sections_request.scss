@@ -1,0 +1,168 @@
+.request__header {
+  background-image: linear-gradient(0deg, rgba($primary, 0.6), rgba(black, 0.3)),
+    url("https://res.cloudinary.com/dw06d9fmy/image/upload/e_blur:2000/v1544186772/shridhar-gupta-678685-unsplash.jpg");
+  background-size: cover;
+  a {
+    color: $white;
+  }
+  a:hover {
+    color: rgba($color: $white, $alpha: 0.7);
+    text-decoration: none;
+  }
+}
+.hero__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.hero__logo {
+  height: 100px;
+  width: 100px;
+}
+.hero__quote {
+  color: $primary;
+  font-weight: bolder;
+}
+.hero__text {
+  color: $white;
+  display: flex;
+  font-size: 2em !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: bolder;
+  text-align: center;
+}
+.hero__link {
+  font-size: 0.8em;
+}
+.hero__down {
+  color: $white;
+  font-size: 60pt;
+}
+@media screen and (max-width: 1024px) {
+  .hero__text {
+    font-size: 15pt;
+  }
+}
+// Sections
+section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.section__feature {
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+.section__img {
+  height: 300px;
+  margin-bottom: -100px;
+  object-fit: cover;
+  width: 80%;
+  z-index: 1;
+}
+.section__big {
+  position: relative;
+  width: 100%;
+  .section__content {
+    padding: 30px;
+    text-align: center;
+  }
+  .section__img--background {
+    background-color: $primary;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  img {
+    height: 600px;
+    object-fit: cover;
+  }
+  .section__text {
+    margin-top: 2rem;
+    strong {
+      color: $primary;
+      font-weight: 600;
+      padding: 1rem;
+    }
+  }
+}
+.section__img--background {
+  background-color: $primary;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  z-index: -1;
+}
+.section__content {
+  height: 100%;
+  position: relative;
+  .section__title {
+    align-items: flex-end;
+    display: flex;
+    margin-bottom: 1.5rem;
+    h3 {
+      background-color: $white;
+      font-weight: 300;
+      line-height: inherit;
+      font-family: "Playfair Display", serif !important;
+      margin-left: -1rem;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    strong {
+      color: $primary;
+      font-size: 3.5rem;
+      font-weight: bolder;
+      margin-bottom: 1rem;
+      z-index: -1;
+    }
+  }
+  .section__text {
+    margin-bottom: 1.5rem;
+    opacity: 0.7;
+  }
+  .section__footer {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
+}
+.request__section--newsletter {
+  background-color: $primary;
+  color: $white;
+  p {
+    opacity: 0.7;
+  }
+  .input-group {
+    text-align: center;
+    width: 100%;
+  }
+  .form-control {
+    background-color: $primary;
+    border: 1px solid $white;
+    color: $white;
+  }
+  .form-control {
+    box-shadow: none;
+  }
+  ::placeholder {
+    color: $white;
+    opacity: 0.7;
+  }
+}
+// Mobile Sections@media screen and (max-width:768px) {
+.section__content {
+  .section__title {
+    margin-top: 1.5rem;
+  }
+  .section__footer {
+    bottom: auto;
+    right: 0;
+  }
+}

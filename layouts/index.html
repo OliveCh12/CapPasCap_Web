@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ .Site.Title }}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" type="image/x-icon" href="{{ "/images/favicon.ico" | absURL }}" />
 
     {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
@@ -36,17 +36,16 @@
         <section class="home__hero--content">
             <div class="container">
                 <h1>Cap'Pas'Cap, la plateforme qui fait matcher emploi et travail en 24h.</h1>
-                <p>Découvrez votre potentiel et devenez le meilleure de tous les meilleures</p>
             </div>
                 <div class="home__hero--buttons">
                     <div class="row">
                         <div class="col-md-6">
-                            <a class="btn btn-primary" href="{{ .Site.BaseURL}}/request">Trouvez un emploi</a>
                             <p>Inscrivez vous et accédez à nos offres d'emploi</p>
+                            <a class="btn btn-primary" href="{{ .Site.BaseURL}}request">Trouvez un emploi</a>
                         </div>
                         <div class="col-md-6">
-                            <a class="btn btn-secondary" href="{{ .Site.BaseURL}}/offer">Poster un emploi</a>
                             <p>Trouvez l'employer qui correspond à vos attentes</p>
+                            <a class="btn btn-secondary" href="{{ .Site.BaseURL}}offer">Poster un emploi</a>
                         </div>
                     </div>
                 </div>
