@@ -30,3 +30,62 @@ mediatype = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true
+
+
+# Menu Footer Configuration
+
+[menu]
+
+[[menu.footer]]
+name = "L'idée"
+url = "/idea/"
+weight = 1
+
+[[menu.footer]]
+name = "L'équipe"
+url = "/team/"
+weight = 2
+
+[[menu.footer]]
+name = "Les News"
+url = "/news/"
+weight = 3
+
+[[menu.footer]]
+name = "Contact"
+url = "/contact/"
+weight = 4
+
+[[menu.footer]]
+name = "CGAU"
+url = "/cgau/"
+weight = 5
+
+# Landing Page
+[params.hero]
+enable  = true
+title = "inspired."
+description =  "Cap’ Pas Cap, la plateforme qui fait matcher travail et handicap en 24 heures !"
+
+# Sections
+[params.section_01]
+enable = true
+title = "Recruter une bonne excuse"
+description = "Embaucher un handicapé ? Certainement la meilleure chose à faire si vous voulez ruiner votre activité en quelques semaines ! Vous n’arrivez pas à licencier vos salariés vous-mêmes, vous voulez vous débarrasser de votre boîte ? Laissez un handicapé s’en occuper, c’est rapide et efficace !"
+
+[params.section_02]
+enable = true
+title = "Trouver la perle rare"
+description = " Entre le trisomique que tout le monde trouve bizarre, le paraplégique qui prend toute la place et l’aveugle qui vous fait trébucher avec sa canne, vous avez l’embarras du choix ! A chaque situation son handicapé, mais quel qu’il soit, soyez sur qu’il va bien vous bousiller votre business !"
+
+[params.section_03]
+enable = true
+title = "Laisser mijoter"
+description = " Abandonnez votre handicapé à son bureau et le tour est joué : il opère dans son coin et fera fuir vos employés en moins de temps qu’il ne faut pour le dire ! C’est vrai, qui voudrait l’approcher ?"
+
+# Témoignages
+[params.testimonials_01]
+description = "Aveugle depuis la naissance, j’ai découvert Cap’ Pas Cap grâce à une amie. Resultats, en deux jours j’ai décroché un entretien et deux semaines après j’ai été embauchée."
+
+[params.testimonials_02]
+description = "Aveugle depuis la naissance, j’ai découvert Cap’ Pas Cap grâce à une amie. Resultats, en deux jours j’ai décroché un entretien et deux semaines après j’ai été embauchée."

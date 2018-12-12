@@ -1,7 +1,31 @@
-<footer class="site-footer" role="contentinfo">
+<!-- <footer class="site-footer" role="contentinfo">
+  <p class="site-footer__copyright">
+    &copy; {{ now.Format "2006" }} &middot;
+    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+  </p>
+</footer> -->
 
-    <p class="site-footer__copyright">
-        &copy; {{ now.Format "2006" }} &middot; <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-    </p>
+<footer>
+  <div class="container">
+    <!-- Footer Logo -->
+    <img src="{{ .Site.BaseURL }}images/logo-responsive.svg" alt="" height="30" width="30" />
 
+    <!-- Footer Links -->
+    <div class="footer__links">
+      <nav class="nav">
+        {{ range .Site.Menus.footer }}
+            <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }} 
+      </nav>
+    </div>
+
+    <!-- Footer Socials -->
+    <div class="footer__socials">
+      <nav class="nav">
+        <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+        <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
+      </nav>
+    </div>
+  </div>
 </footer>

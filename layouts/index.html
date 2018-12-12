@@ -5,23 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ .Site.Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/x-icon" href="{{ "/images/favicon.ico" | absURL }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ "/images/favicon.ico" | absURL }}" />
 
     {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
 </head>
 <body>
     <main class="home__hero">
         <header class="home__hero--header">
-            <div class="container">
-                <img class="home__hero--logo" src="/images/logo-white.svg" alt="" width="70" width="70">
-                <nav class="nav">
-                    <a class="nav-link active" href="#">Langue</a>
-                    <a class="nav-link" href="#">L'idée</a>
-                    <a class="nav-link" href="#">L'équipe</a>
-                    <a class="nav-link" href="#">Les News</a>
-                    <a class="nav-link" href="#">Contact</a>
-                </nav>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo-white.svg" width="70" height="70" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        {{ range .Site.Menus.footer }}
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                            </li>
+                        {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
         <section class="home__hero--content">
             <div class="container">
@@ -31,17 +41,17 @@
                 <div class="home__hero--buttons">
                     <div class="row">
                         <div class="col-md-6">
-                            <a class="btn btn-primary" href="">Trouvez un emploi</a>
+                            <a class="btn btn-primary" href="{{ .Site.BaseURL}}request">Trouvez un emploi</a>
                             <p>Inscrivez vous et accédez à nos offres d'emploi</p>
                         </div>
                         <div class="col-md-6">
-                            <a class="btn btn-secondary" href="">Poster un emploi</a>
+                            <a class="btn btn-secondary" href="{{ .Site.BaseURL}}offer">Poster un emploi</a>
                             <p>Trouvez l'employer qui correspond à vos attentes</p>
                         </div>
                     </div>
                 </div>
         </section>
-        <footer>&copy; Copyright {{ now.Format "2006" }} / {{ .Site.Title }}</footer>
+        <footer class="home__footer">&copy; Copyright {{ now.Format "2006" }} / {{ .Site.Title }}</footer>
     </main>
     {{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}
 </body>
