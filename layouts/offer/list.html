@@ -1,0 +1,166 @@
+{{ define "main" }}
+<header class="offer__header--seondary">
+    <div class="hero">
+        <div class="container">
+            {{ with .Site.Params.hero }}
+            <div class="hero__content">
+                <img class="hero__logo" src="/images/logo-white.svg" alt="">
+                <p class="hero__text">
+                    <strong class="hero__quote">"</strong>
+                    {{ .description }}
+                    <strong class="hero__quote">"</strong>
+                </p>
+                <a class="hero__button btn btn-outline-light" href="">S'inscrire</a>
+                <a class="" href="">Déjà inscrit ? Se connecter.</a>
+                <a href="#section__feature"></a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</header>
+
+<!-- Landing / Section 1 -->
+<section class="reveal-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="section__feature" id="section__feature">
+                    <img class="section__img" src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_10/v1544088287/demo1.jpg" alt="">
+                    <div class="section__img--background--secondary"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                {{ with .Site.Params.section_01 }}
+                <div class="section__content--secondary">
+                    <div class="section__title">
+                        <strong>01</strong>
+                        <h3>{{ .title }}</h3>
+                    </div>
+                    <p class="section__text">
+                      {{ .description }}
+                    </p>
+                    <div class="section__footer">
+                        <a class="section__button btn btn-secondary" href="">Créer mon profil</a>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <hr>
+</div>
+
+<!-- Landing / Section 3 -->
+<section class="reveal-right">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                    {{ with .Site.Params.section_02 }}
+                <div class="section__content--secondary">
+                    <div class="section__title">
+                        <strong>02</strong>
+                        <h3>{{ .title }}</h3>
+                    </div>
+                    <p class="section__text">
+                        {{ .description }}
+                    </p>
+                    <div class="section__footer">
+                        <a class="section__button btn btn-secondary" href="">Recevoir des offre</a>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+            <div class="col-md-6">
+                <div class="section__feature">
+                    <img class="section__img" src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_10/v1544088287/demo2.jpg" alt="">
+                    <div class="section__img--background--secondary"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Landing / Section 4 -->
+<section class="reveal-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="section__feature">
+                    <img class="section__img" src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_10/v1544088287/demo3.jpg" alt="">
+                    <div class="section__img--background--secondary"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                    {{ with .Site.Params.section_03 }}
+                    <div class="section__content--secondary">
+                        <div class="section__title">
+                            <strong>03</strong>
+                            <h3>{{ .title }}</h3>
+                        </div>
+                        <p class="section__text">
+                            {{ .description }}
+                        </p>
+                        <div class="section__footer">
+                            <a class="section__button btn btn-secondary" href="">Recevoir des offre</a>
+                        </div>
+                    </div>
+                    {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Landing / Section 2 -->
+<section class="reveal-left">
+    <div class="container">
+        <div class="section__big--secondary">
+            <div class="section__img--background--secondary"></div>
+            <div class="row">
+                <div class="col-md-6">
+                    {{ with .Site.Params.testimonials_01 }}
+                    <div class="section__content">
+                        <img src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_10/v1544088287/portrait1.jpg" alt="">
+                        <p class="section__text">
+                            <strong> " </strong>
+                            {{ .description }}
+                            <strong> " </strong>
+                        </p>
+                    </div>
+                    {{ end }}
+                </div>
+
+                <div class="col-md-6">
+                {{ with .Site.Params.testimonials_02 }}
+                <div class="section__content">
+                    <img src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_10/v1544088287/portrait2.jpg" alt="">
+                    <p class="section__text">
+                        <strong> " </strong>
+                        {{ .description }}
+                        <strong> " </strong>
+                    </p>
+                </div>
+                {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="offer__section--newsletter--secondary">
+    <div class="container">
+        <div class="text-center">
+            <h3>Recevez notre Newsletter</h3>
+            <p>Inscrivez-vous à notre newsletter et recevez nos conseils personnalisés pour optimiser encore plus votre
+                recherche d’emploi</p>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Entrez votre e-mail" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-light" type="button" id="button-addon2">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
