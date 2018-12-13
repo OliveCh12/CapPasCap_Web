@@ -1,8 +1,8 @@
-.offer__header--seondary {
+.offer__header {
     background-image: linear-gradient(
         0deg,
-        rgba($secondary, 0.1),
-        rgba($secondary, 0.5)
+        rgba($secondary, 0.6),
+        rgba(black, 0.1)
       ),
       url("https://res.cloudinary.com/dw06d9fmy/image/upload/e_blur:2000/v1544186772/shridhar-gupta-678685-unsplash.jpg");
     background-size: cover;
@@ -16,43 +16,9 @@
     }
   }
   
-  .hero__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    height: 50vh;
-  }
-  
-  .hero__logo {
-    height: 100px;
-    width: 100px;
-  }
-  
   .hero__quote--secondary {
     color: $secondary;
     font-weight: bolder;
-  }
-  
-  .hero__text {
-    font-weight: bolder;
-    text-align: center;
-    display: flex;
-    font-size: 18pt;
-    color: $white;
-  }
-  
-  .hero__down {
-    color: $white;
-    font-size: 60pt;
-  }
-  
-  @media screen and (max-width: 1024px) {
-    .hero__text {
-      font-size: 15pt;
-    }
   }
   
   // Sections
@@ -83,14 +49,8 @@
     margin-bottom: -100px;
   }
   
-  .section__big--secondary {
-    width: 100%;
-    position: relative;
-  
-    .section__content {
-      padding: 30px;
-      text-align: center;
-    }
+  .section__big {
+
   
     .section__img--background--secondary {
       background-color: $secondary;
@@ -175,18 +135,5 @@
     ::placeholder {
         color: $white;
         opacity: 0.7;
-    }
-  }
-  // Mobile Sections
-  @media screen and (max-width: 768px) {
-    .section__content--secondary {
-      .section__title {
-        margin-top: 1.5rem;
-      }
-  
-      .section__footer {
-        bottom: auto;
-        right: 0;
-      }
     }
   }

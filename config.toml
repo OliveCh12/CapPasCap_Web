@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "cappascap.netlify.com"
 languageCode = "en-gb"
 title = "Cap'Pas'Cap"
 
@@ -75,17 +75,16 @@ description = "Créez votre profil et renseignez le maximum d’informations : l
 
 [params.section_02]
 enable = true
-title = "Trouver la perle rare"
-description = " Entre le trisomique que tout le monde trouve bizarre, le paraplégique qui prend toute la place et l’aveugle qui vous fait trébucher avec sa canne, vous avez l’embarras du choix ! A chaque situation son handicapé, mais quel qu’il soit, soyez sur qu’il va bien vous bousiller votre business !"
+title = "Des offres sur mesures"
+description = "Notre équipe étudie votre candidature et vous aide à affiner votre recherche avec un coach personnel. Puis parmi nos recruteurs membres de Cap’ Pas Cap, nous sélectionnons les offres les plus pertinentes et les plus cohérentes avec votre handicap et vous les proposons dans un délai de 24 heures après que vous ayez formulé votre demande."
 
 [params.section_03]
 enable = true
-title = "Laisser mijoter"
-description = " Abandonnez votre handicapé à son bureau et le tour est joué : il opère dans son coin et fera fuir vos employés en moins de temps qu’il ne faut pour le dire ! C’est vrai, qui voudrait l’approcher ?"
-
+title = "Passez votre entretien"
+description = "Nous rentrons de nouveau en contact avec vous pour vous guider vers le meilleur choix pour vous parmi les offres qui vous ont été proposées. Une fois votre entretien planifié, votre coach personnel vous aide à vous préparer pour celui-ci. L’entretien se déroule par appel vidéo sur notre plateforme pour vous éviter de vous déplacer. Pratique non ?"
 # Témoignages
 [params.testimonials_01]
 description = "Aveugle depuis la naissance, j’ai découvert Cap’ Pas Cap grâce à une amie. Resultats, en deux jours j’ai décroché un entretien et deux semaines après j’ai été embauchée."
 
 [params.testimonials_02]
-description = "Aveugle depuis la naissance, j’ai découvert Cap’ Pas Cap grâce à une amie. Resultats, en deux jours j’ai décroché un entretien et deux semaines après j’ai été embauchée."
+description = "Bipolaire depuis toujours, j’ai du mal à trouver un travail qui accepte ma différence. Grâce à Cap’ Pas Cap je travaille dans une entreprise qui me comprend."

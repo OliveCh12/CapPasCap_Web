@@ -185,10 +185,6 @@ body {
 @media screen and (max-width: 1024px) {
   .hero__text {
     font-size: 15pt; } }
-section {
-  padding-bottom: 60px;
-  padding-top: 60px; }
-
 .section__feature {
   height: 100%;
   position: relative;
@@ -215,8 +211,10 @@ section {
     width: 100%;
     z-index: -1; }
   .section__big img {
-    height: 600px;
-    object-fit: cover; }
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center; }
   .section__big .section__text {
     margin-top: 2rem; }
     .section__big .section__text strong {
@@ -249,7 +247,7 @@ section {
     .section__content .section__title strong {
       color: #FD5C63;
       font-size: 3.5rem;
-      font-weight: bolder;
+      font-weight: 900;
       margin-bottom: 1rem;
       z-index: -1; }
   .section__content .section__text {
@@ -257,17 +255,18 @@ section {
     opacity: 0.7; }
   .section__content .section__footer {
     bottom: 0;
-    position: absolute;
-    right: 0; }
+    text-align: center; }
 
 .request__section--newsletter {
   background-color: #FD5C63;
   color: #fff; }
+  .request__section--newsletter h3 {
+    font-family: "Playfair Display", serif !important;
+    font-weight: 600; }
   .request__section--newsletter p {
     opacity: 0.7; }
   .request__section--newsletter .input-group {
-    text-align: center;
-    width: 100%; }
+    text-align: center; }
   .request__section--newsletter .form-control {
     background-color: #FD5C63;
     border: 1px solid #fff;
@@ -276,7 +275,8 @@ section {
     box-shadow: none; }
   .request__section--newsletter ::placeholder {
     color: #fff;
-    opacity: 0.7; }
+    opacity: 0.7;
+    font-weight: 600; }
 
 .section__content .section__title {
   margin-top: 1.5rem; }
@@ -284,46 +284,19 @@ section {
   bottom: auto;
   right: 0; }
 
-.offer__header--seondary {
-  background-image: linear-gradient(0deg, rgba(254, 193, 99, 0.1), rgba(254, 193, 99, 0.5)), url("https://res.cloudinary.com/dw06d9fmy/image/upload/e_blur:2000/v1544186772/shridhar-gupta-678685-unsplash.jpg");
+.offer__header {
+  background-image: linear-gradient(0deg, rgba(254, 193, 99, 0.6), rgba(0, 0, 0, 0.1)), url("https://res.cloudinary.com/dw06d9fmy/image/upload/e_blur:2000/v1544186772/shridhar-gupta-678685-unsplash.jpg");
   background-size: cover; }
-  .offer__header--seondary a {
+  .offer__header a {
     color: #fff; }
-  .offer__header--seondary a:hover {
+  .offer__header a:hover {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none; }
-
-.hero__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  height: 50vh; }
-
-.hero__logo {
-  height: 100px;
-  width: 100px; }
 
 .hero__quote--secondary {
   color: #FEC163;
   font-weight: bolder; }
 
-.hero__text {
-  font-weight: bolder;
-  text-align: center;
-  display: flex;
-  font-size: 18pt;
-  color: #fff; }
-
-.hero__down {
-  color: #fff;
-  font-size: 60pt; }
-
-@media screen and (max-width: 1024px) {
-  .hero__text {
-    font-size: 15pt; } }
 section {
   padding-top: 60px;
   padding-bottom: 60px; }
@@ -346,28 +319,22 @@ section {
   z-index: 1;
   margin-bottom: -100px; }
 
-.section__big--secondary {
+.section__big .section__img--background--secondary {
+  background-color: #FEC163;
+  height: 150px;
   width: 100%;
-  position: relative; }
-  .section__big--secondary .section__content {
-    padding: 30px;
-    text-align: center; }
-  .section__big--secondary .section__img--background--secondary {
-    background-color: #FEC163;
-    height: 150px;
-    width: 100%;
-    z-index: -1;
-    position: absolute;
-    top: 0; }
-  .section__big--secondary img {
-    height: 600px;
-    object-fit: cover; }
-  .section__big--secondary .section__text {
-    margin-top: 2rem; }
-    .section__big--secondary .section__text strong {
-      font-weight: 600;
-      color: #FEC163;
-      padding: 1rem; }
+  z-index: -1;
+  position: absolute;
+  top: 0; }
+.section__big img {
+  height: 600px;
+  object-fit: cover; }
+.section__big .section__text {
+  margin-top: 2rem; }
+  .section__big .section__text strong {
+    font-weight: 600;
+    color: #FEC163;
+    padding: 1rem; }
 
 .section__content--secondary {
   position: relative;
@@ -412,12 +379,6 @@ section {
     color: #fff;
     opacity: 0.7; }
 
-@media screen and (max-width: 768px) {
-  .section__content--secondary .section__title {
-    margin-top: 1.5rem; }
-  .section__content--secondary .section__footer {
-    bottom: auto;
-    right: 0; } }
 footer .container {
   display: flex !important;
   justify-content: space-between;
