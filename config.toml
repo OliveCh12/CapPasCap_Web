@@ -1,5 +1,5 @@
 baseURL = "https://cappascap.netlify.com/"
-languageCode = "en-gb"
+languageCode = "fr-fr"
 title = "Cap'Pas'Cap"
 
 enableRobotsTXT = true
