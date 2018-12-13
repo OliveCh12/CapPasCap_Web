@@ -1,5 +1,5 @@
 baseURL = "grape-fruits.herokuapp.com"
-languageCode = "en-gb"
+languageCode = "fr-fr"
 title = "Cap'Pas'Cap"
 
 enableRobotsTXT = true
