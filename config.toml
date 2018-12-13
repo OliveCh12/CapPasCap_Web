@@ -1,4 +1,4 @@
-baseURL = "grape-fruits.herokuapp.com"
+baseURL = ""
 languageCode = "en-gb"
 title = "Cap'Pas'Cap"
 
@@ -37,29 +37,14 @@ notAlternative = true
 [menu]
 
 [[menu.footer]]
-name = "L'idée"
-url = "/idea/"
+name = "Recrutement"
+url = "/request/"
 weight = 1
 
 [[menu.footer]]
-name = "L'équipe"
-url = "/team/"
+name = "Candidature"
+url = "/offer/"
 weight = 2
-
-[[menu.footer]]
-name = "Les News"
-url = "/news/"
-weight = 3
-
-[[menu.footer]]
-name = "Contact"
-url = "/contact/"
-weight = 4
-
-[[menu.footer]]
-name = "CGAU"
-url = "/cgau/"
-weight = 5
 
 # Landing Page
 [params.hero]
