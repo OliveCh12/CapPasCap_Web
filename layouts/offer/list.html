@@ -4,13 +4,15 @@
         <div class="container">
             {{ with .Site.Params.hero }}
             <div class="hero__content">
+                <a href="/">
                 <img class="hero__logo" src="/images/logo-white.svg" alt="">
+                </a>
                 <p class="hero__text">
                     <strong class="hero__quote--secondary">"</strong>
-                    {{ .description }}
+                    Embauchez votre futur employé en une rapidité sans précédent !
                     <strong class="hero__quote--secondary">"</strong>
                 </p>
-                <a class="hero__button btn btn-success text-uppercase" href="">S'inscrire Maintenant</a>
+                <a class="hero__button btn btn-success text-uppercase" href="">Poster mon annonce</a>
                 <a class="hero__link" href="">Déjà inscrit ? Se connecter.</a>
                 <a href="#section__feature"></a>
             </div>
@@ -26,18 +28,19 @@
             <div class="col-md-6">
                 <div class="section__feature" id="section__feature">
                     <img class="section__img" src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_50/v1544654148/rawpixel-761483-unsplash.jpg" alt="">
-                    <div class="section__img--background"></div>
+                    <div class="section__img--background--secondary"></div>
                 </div>
             </div>
             <div class="col-md-6">
                 {{ with .Site.Params.section_01 }}
-                <div class="section__content">
+                <div class="section__content--secondary">
                     <div class="section__title">
                         <strong>01</strong>
-                        <h3>{{ .title }}</h3>
+                        <h3>Postez votre annonce</h3>
                     </div>
                     <p class="section__text">
-                      {{ .description }}
+                            Vous êtes à la recherche d’un salarié ? Vous avez une place qui s’est libérée ?
+                            Renseignez les informations de votre entreprise, le type de profils que vous recherchez ainsi que les compétences nécessaires. Votre annonce sera validée sous quelques heures afin de vous trouver au plus vite des profils de personnes handicapées adaptés.
                     </p>
                     <div class="section__footer">
                         <a class="section__button btn btn-outline-success" href="">Créer mon profil</a>
@@ -62,10 +65,11 @@
                 <div class="section__content">
                     <div class="section__title">
                         <strong>02</strong>
-                        <h3>{{ .title }}</h3>
+                        <h3>Trouvez la perle rare</h3>
                     </div>
                     <p class="section__text">
-                        {{ .description }}
+                            Sur Cap’ Pas Cap, un grand nombre de personnes handicapées ayant de réelles compétences cherchent un travail !
+                            Nous vous proposerons très vite ceux ayant le profil le plus adapté à votre recherche. Vous n’aurez plus qu’à valider les profils qui vous intéressent pour passer à l’étape suivante !
                     </p>
                     <div class="section__footer">
                         <a class="section__button btn btn-outline-success" href="">Recevoir des offres</a>
@@ -76,7 +80,7 @@
             <div class="col-md-6">
                 <div class="section__feature">
                     <img class="section__img" src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_50/v1544654148/rawpixel-761483-unsplash.jpg" alt="">
-                    <div class="section__img--background"></div>
+                    <div class="section__img--background--secondary"></div>
                 </div>
             </div>
         </div>
@@ -94,7 +98,7 @@
             <div class="col-md-6">
                 <div class="section__feature">
                     <img class="section__img" src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_50/v1544654153/helloquence-61189-unsplash.jpg" alt="">
-                    <div class="section__img--background"></div>
+                    <div class="section__img--background--secondary"></div>
                 </div>
             </div>
             <div class="col-md-6">
@@ -102,10 +106,10 @@
                     <div class="section__content">
                         <div class="section__title">
                             <strong>03</strong>
-                            <h3>{{ .title }}</h3>
+                            <h3>Passez à l’entretien</h3>
                         </div>
                         <p class="section__text">
-                            {{ .description }}
+                                Grâce à Cap’ Pas Cap, plus besoin de se déplacer. En effet, la plateforme met en place un outil de visio-conférence afin de pouvoir faire passer un entretien à distance afin de faciliter le processus d’embauche. L’embauche n’a jamais été aussi facile !
                         </p>
                         <div class="section__footer">
                             <a class="section__button btn btn-outline-success" href="">Postuler</a>
@@ -120,7 +124,7 @@
 <section class="reveal-left">
     <div class="container">
         <div class="section__big">
-            <div class="section__img--background"></div>
+            <div class="section__img--background--secondary"></div>
             <div class="row">
                 <div class="col-md-6">
                     {{ with .Site.Params.testimonials_01 }}
@@ -128,7 +132,7 @@
                         <img src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_50/v1544654185/rawpixel-760063-unsplash.jpg" alt="">
                         <p class="section__text">
                             <strong> " </strong>
-                            {{ .description }}
+                            Nous avons découvert Cap’ Pas Pas sur instagram. L’idée nous a interpellé et avons tenté une première fois de faire appel à eux. Depuis c’est notre référence !
                             <strong> " </strong>
                         </p>
                     </div>
@@ -141,7 +145,7 @@
                     <img src="https://res.cloudinary.com/dw06d9fmy/image/upload/q_50/v1544654177/rawpixel-648558-unsplash.jpg" alt="">
                     <p class="section__text">
                         <strong> " </strong>
-                        {{ .description }}
+                        Cap’ Pas Cap a changé notre vision du handicap chez les personnes handicapées. Nous avons fait appel à eux et les employés que l’on nous a proposés correspondent vraiment à nos besoins.
                         <strong> " </strong>
                     </p>
                 </div>
@@ -151,7 +155,7 @@
         </div>
     </div>
 </section>
-<section class="request__section--newsletter">
+<section class="offer__section--newsletter">
     <div class="container">
         <div class="text-center">
             <h3>Recevez notre Newsletter</h3>

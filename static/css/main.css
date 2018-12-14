@@ -348,6 +348,135 @@ section {
       background-color: #fff;
       line-height: inherit;
       margin-left: 0.5rem; }
+      .section__content--secondary .section__title h3 .request__header {
+        background-image: linear-gradient(0deg, rgba(253, 92, 99, 0.6), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/dw06d9fmy/image/upload/e_blur:2000/v1544186772/shridhar-gupta-678685-unsplash.jpg");
+        background-size: cover; }
+        .section__content--secondary .section__title h3 .request__header a {
+          color: #fff; }
+        .section__content--secondary .section__title h3 .request__header a:hover {
+          color: rgba(255, 255, 255, 0.7);
+          text-decoration: none; }
+      .section__content--secondary .section__title h3 .hero__content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 60vh;
+        justify-content: space-around;
+        padding-bottom: 30px;
+        padding-top: 30px; }
+      .section__content--secondary .section__title h3 .hero__logo {
+        height: 100px;
+        width: 100px; }
+      .section__content--secondary .section__title h3 .hero__quote {
+        color: #FD5C63;
+        font-weight: bolder; }
+      .section__content--secondary .section__title h3 .hero__text {
+        color: #fff;
+        display: flex;
+        font-size: 2em !important;
+        font-family: "Playfair Display", serif !important;
+        font-weight: bolder;
+        text-align: center; }
+      .section__content--secondary .section__title h3 .hero__link {
+        font-size: 0.8em; }
+      .section__content--secondary .section__title h3 .hero__down {
+        color: #fff;
+        font-size: 60pt; }
+      @media screen and (max-width: 1024px) {
+        .section__content--secondary .section__title h3 .hero__text {
+          font-size: 15pt; } }
+      .section__content--secondary .section__title h3 .section__feature {
+        height: 100%;
+        position: relative;
+        text-align: center; }
+      .section__content--secondary .section__title h3 .section__img {
+        height: 300px;
+        margin-bottom: -100px;
+        object-fit: cover;
+        width: 80%;
+        z-index: 1; }
+      .section__content--secondary .section__title h3 .section__big {
+        position: relative;
+        width: 100%; }
+        .section__content--secondary .section__title h3 .section__big .section__content {
+          padding: 30px;
+          text-align: center; }
+        .section__content--secondary .section__title h3 .section__big .section__img--background {
+          background-color: #FD5C63;
+          height: 150px;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          z-index: -1; }
+        .section__content--secondary .section__title h3 .section__big img {
+          width: 400px;
+          height: 500px;
+          object-fit: cover;
+          object-position: center; }
+        .section__content--secondary .section__title h3 .section__big .section__text {
+          margin-top: 2rem; }
+          .section__content--secondary .section__title h3 .section__big .section__text strong {
+            color: #FD5C63;
+            font-weight: 600;
+            padding: 1rem; }
+      .section__content--secondary .section__title h3 .section__img--background {
+        background-color: #FD5C63;
+        bottom: 0;
+        height: 150px;
+        width: 100%;
+        z-index: -1; }
+      .section__content--secondary .section__title h3 .section__content {
+        height: 100%;
+        position: relative; }
+        .section__content--secondary .section__title h3 .section__content .section__title {
+          align-items: flex-end;
+          display: flex;
+          margin-bottom: 1.5rem; }
+          .section__content--secondary .section__title h3 .section__content .section__title h3 {
+            background-color: #fff;
+            font-weight: 300;
+            line-height: inherit;
+            font-family: "Playfair Display", serif !important;
+            margin-left: -1rem;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem; }
+          .section__content--secondary .section__title h3 .section__content .section__title strong {
+            color: #FD5C63;
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            z-index: -1; }
+        .section__content--secondary .section__title h3 .section__content .section__text {
+          margin-bottom: 1.5rem;
+          opacity: 0.7; }
+        .section__content--secondary .section__title h3 .section__content .section__footer {
+          bottom: 0;
+          text-align: center; }
+      .section__content--secondary .section__title h3 .request__section--newsletter {
+        background-color: #FD5C63;
+        color: #fff; }
+        .section__content--secondary .section__title h3 .request__section--newsletter h3 {
+          font-family: "Playfair Display", serif !important;
+          font-weight: 600; }
+        .section__content--secondary .section__title h3 .request__section--newsletter p {
+          opacity: 0.7; }
+        .section__content--secondary .section__title h3 .request__section--newsletter .input-group {
+          text-align: center; }
+        .section__content--secondary .section__title h3 .request__section--newsletter .form-control {
+          background-color: #FD5C63;
+          border: 1px solid #fff;
+          color: #fff; }
+        .section__content--secondary .section__title h3 .request__section--newsletter .form-control {
+          box-shadow: none; }
+        .section__content--secondary .section__title h3 .request__section--newsletter ::placeholder {
+          color: #fff;
+          opacity: 0.7;
+          font-weight: 600; }
+      .section__content--secondary .section__title h3 .section__content .section__title {
+        margin-top: 1.5rem; }
+      .section__content--secondary .section__title h3 .section__content .section__footer {
+        bottom: auto;
+        right: 0; }
     .section__content--secondary .section__title strong {
       color: #FEC163;
       font-size: 3rem;
@@ -361,21 +490,24 @@ section {
     bottom: 0;
     right: 0; }
 
-.offer__section--newsletter--secondary {
+.offer__section--newsletter {
   background-color: #FEC163;
   color: #fff; }
-  .offer__section--newsletter--secondary p {
+  .offer__section--newsletter h3 {
+    font-family: "Playfair Display", serif !important;
+    font-weight: 600; }
+  .offer__section--newsletter p {
     opacity: 0.7; }
-  .offer__section--newsletter--secondary .input-group {
+  .offer__section--newsletter .input-group {
     width: 100%;
     text-align: center; }
-  .offer__section--newsletter--secondary .form-control {
+  .offer__section--newsletter .form-control {
     background-color: #FEC163;
     border: 1px solid #fff;
     color: #fff; }
-  .offer__section--newsletter--secondary .form-control {
+  .offer__section--newsletter .form-control {
     box-shadow: none; }
-  .offer__section--newsletter--secondary ::placeholder {
+  .offer__section--newsletter ::placeholder {
     color: #fff;
     opacity: 0.7; }
 
